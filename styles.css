@@ -1,0 +1,91 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+ 
+.wrapper > * {
+    padding: 10px;
+    flex: 3 0px;
+}
+
+.inwrap{
+    display: grid;
+}
+
+.inwrap > * {
+    padding: 58px;
+}
+
+.picture{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px;
+}
+
+.drawer{
+    width: 116px;
+    padding: 0px;
+    flex: 1 1 auto;
+}
+
+.info {
+    text-align: left;
+    background-color: white;
+    flex-flow: column wrap;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.description{
+    font-weight: lighter;
+}
+
+.user{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.pic{
+    border-radius: 25px;
+}
+
+.identity{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+
+}
+
+.name{
+    font-weight: bold;
+    margin: 0;
+    margin-left: 12px;
+    text-align: left;
+}
+
+.date{
+    font-weight: lighter;
+    margin: 0;
+    margin-left: 12px;
+    text-align: left;
+}
+
+@media all and (max-width: 1200px){
+    .wrapper {flex: 1 0 0;}
+    .inwrap > * {
+        padding: 10px;
+    }
+}
+
+body {
+    padding: 300px;
+    font-family: sans-serif;
+    background-color: hsl(210, 46%, 95%);
+}
